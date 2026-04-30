@@ -1,21 +1,21 @@
 const projects = [
   {
     name: "workr",
-    subtitle: "A thing Devesh is building.",
+    subtitle: "In testing.",
     href: "#",
-    status: "Building",
+    status: "Testing",
   },
   {
     name: "sleepr",
-    subtitle: "Another thing Devesh is building.",
+    subtitle: "In testing.",
     href: "#",
-    status: "Building",
+    status: "Testing",
   },
   {
-    name: "bangrsripts",
-    subtitle: "Pending.",
-    href: "#",
-    status: "Pending",
+    name: "bangrscripts",
+    subtitle: "Live now.",
+    href: "https://bangrscripts.vercel.app/",
+    status: "Live",
   },
   {
     name: "kannada learn",
