@@ -42,6 +42,12 @@ const projects = [
     status: "Pending",
   },
   {
+    name: "Therapst",
+    subtitle: "In testing.",
+    href: "#",
+    status: "Testing",
+  },
+  {
     name: "willigetburned.fun",
     subtitle: "A live project on the internet.",
     href: "https://www.willigetburned.fun/",
@@ -89,11 +95,13 @@ export default function Home() {
                     className={`rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] ${
                       project.status === "Live"
                         ? "bg-[#12351C] text-[#86EFAC]"
-                        : project.status === "Pending"
-                          ? "bg-[#2A220A] text-[#FCD34D]"
-                          : project.status === "Abandoned"
-                            ? "bg-[#2A1212] text-[#FCA5A5]"
-                            : "bg-white/8 text-white/60"
+                        : project.status === "Testing"
+                          ? "bg-[#102A38] text-[#7DD3FC]"
+                          : project.status === "Pending"
+                            ? "bg-[#2A220A] text-[#FCD34D]"
+                            : project.status === "Abandoned"
+                              ? "bg-[#2A1212] text-[#FCA5A5]"
+                              : "bg-white/8 text-white/60"
                     }`}
                   >
                     {project.status}
@@ -103,7 +111,7 @@ export default function Home() {
                 <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-4 text-sm text-white/55">
                   <span>{isLive ? project.href.replace(/^https?:\/\//, "") : "Link coming soon"}</span>
                   <span className="font-semibold text-white/80 transition group-hover:translate-x-1">
-                    {isLive ? "Open →" : project.status === "Pending" ? "Pending" : project.status === "Abandoned" ? "Abandoned" : "Coming soon"}
+                    {isLive ? "Open →" : project.status === "Testing" ? "Testing" : project.status === "Pending" ? "Pending" : project.status === "Abandoned" ? "Abandoned" : "Coming soon"}
                   </span>
                 </div>
               </a>
